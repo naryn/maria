@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"Maria/cmd"
+	"github.com/naryn/maria/cmd"
 )
 
 func main() {

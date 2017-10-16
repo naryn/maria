@@ -3,11 +3,11 @@ package conversation
 import (
 	"time"
 	"strings"
-	"Maria/models/plugins"
 	"log"
 	"sync"
 	"fmt"
-	"Maria/models/tts"
+	"github.com/naryn/maria/models/plugins"
+	"github.com/naryn/maria/models/tts"
 )
 
 var Msg chan string

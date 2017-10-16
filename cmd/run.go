@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"github.com/spf13/cobra"
 	"log"
-	"Maria/models/stt"
-	"Maria/models/tts"
 	"sync"
-	"Maria/models/conversation"
+	"github.com/naryn/maria/models/stt"
+	"github.com/naryn/maria/models/tts"
+	"github.com/naryn/maria/models/conversation"
 )
 
 var runCmd = &cobra.Command{

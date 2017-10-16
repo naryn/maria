@@ -11,7 +11,7 @@ type plugin_time struct {
 }
 
 func (this plugin_time) Keyword() []string {
-	return []string{"时间","几点"}
+	return []string{"时间","几点","时辰"}
 }
 
 func (this plugin_time) Flag() bool {

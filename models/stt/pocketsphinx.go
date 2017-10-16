@@ -8,7 +8,7 @@ import (
 	"github.com/xlab/closer"
 	"github.com/xlab/pocketsphinx-go/sphinx"
 	"github.com/xlab/portaudio-go/portaudio"
-	"Maria/models/conversation"
+	"github.com/naryn/maria/models/conversation"
 	"fmt"
 )
 

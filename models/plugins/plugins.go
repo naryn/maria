@@ -3,7 +3,7 @@ package plugins
 import (
 	"strings"
 	"fmt"
-	"Maria/models/tts"
+	"github.com/naryn/maria/models/tts"
 )
 
 var Plugins map[string]Need
@@ -26,25 +26,29 @@ func Say(msg string)  {
 
 func Each(str string) {
 
+	matching := false
 	for _, plugin := range Plugins {
 
 		for _, w := range plugin.Keyword() {
 			if (strings.Contains(str, w)) {
 				/* 查看插件是否是启用状态 */
 				if plugin.Flag() {
+					matching = true
 					if plugin.Active(){
 						go plugin.Run(str)
 					}else{
 						go plugin.Run(str)
 					}
-					return
+
 				}
 			}
 		}
 
 	}
 
-	go Plugins["plugins_bot"].Run(str)
+	if matching == false {
+		go Plugins["plugins_robot"].Run(str)
+	}
 }
 
 func Regist(name string, plugin Need) {

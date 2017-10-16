@@ -1,7 +1,7 @@
 package tts
 
 import (
-	"Maria/utils"
+	"github.com/naryn/maria/utils"
 	"fmt"
 )
 

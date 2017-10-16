@@ -3,7 +3,7 @@ package stt
 import (
 	"fmt"
 	"sync"
-	"Maria/models/tts"
+	"github.com/naryn/maria/models/tts"
 )
 
 var Stt map[string]Need
